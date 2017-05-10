@@ -1,13 +1,16 @@
 class StaticPagesController < ApplicationController
   def home
-    render html: 'Home'
+    render 'home'
   end
 
   def about
-    render html: 'About'
+    render 'about'
   end
 
   def portfolio
-    render html: 'Portfolio'
+    render 'portfolio'
+  end
+
+  def resume
   end
 end
