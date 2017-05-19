@@ -15,32 +15,6 @@
   </head>
 
   <body>
-    <header>
-      <h1>Bison Hubert</h1>
-      <nav>
-        <%= link_to 'Home', root_path %>
-        <a href="#">Blog</a>
-        <%= link_to 'Portfolio', portfolio_path %>
-        <%= link_to 'Resumé', asset_path('resume.pdf') %>
-        <%= link_to 'About', about_path %>
-      </nav>
-    </header>
     <%= yield %>
-    <footer>
-      <nav>
-        <a href="mailto:davidbisonhubert@gmail.com">
-          <img src="<%= image_path 'icons/email-icon.png' %>" alt="email-icon"/>
-        </a>
-        <a href="https://www.linkedin.com/in/bisonhubert/" target="_blank">
-          <img src="<%= image_path 'icons/linkedin-icon.png' %>" alt="linkedin-icon"/>
-        </a>
-        <a href="https://github.com/bisonhubert" target="_blank">
-          <img src="<%= image_path 'icons/github-icon.png' %>" alt="github-icon"/>
-        </a>
-        <a href="https://twitter.com/_bison__" target="_blank">
-          <img src="<%= image_path 'icons/twitter-icon.png' %>" alt="twitter-icon"/>
-        </a>
-      </nav>
-    </footer>
   </body>
 </html>

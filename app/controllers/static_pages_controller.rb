@@ -7,10 +7,6 @@ class StaticPagesController < ApplicationController
     render 'about'
   end
 
-  def portfolio
-    render 'portfolio'
-  end
-
   def resume
   end
 end
