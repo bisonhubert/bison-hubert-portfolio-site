@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio website for Bison Hubert">
     <meta name="google" content="nositelinkssearchbox">
     <link rel="icon" href="<%= image_path 'icons/favicon.png' %>" type="image/x-icon"/>
-    <title>Bison Hubert • </title>
+    <title><%= yield(:title) %> | Bison Hubert</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
