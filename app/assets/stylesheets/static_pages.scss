@@ -1,3 +1,20 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.under-construction {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.under-construction-h1 {
+  margin-top: 5%;
+  padding-top: 2%;
+  font-size: 3em;
+  font-family: Verdana, Helvetica, sans-serif;
+  letter-spacing: 2px
+}
+
+.under-construction-img {
+  width: 100%;
+  margin: 5% 0;
+  padding: 2% 0;
+}
