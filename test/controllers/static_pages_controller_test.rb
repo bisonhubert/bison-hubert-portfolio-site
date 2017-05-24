@@ -30,7 +30,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get portfolio" do
-    get projects_url
+    get portfolio_url
     assert_response :success
     assert_select "title", "Portfolio | #{@base_title}"
   end
