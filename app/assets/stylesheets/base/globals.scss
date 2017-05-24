@@ -1,0 +1,30 @@
+$font-stack: Verdana, Helvetica, sans-serif;
+$primary-color: #050505;
+$secondary-color: #515A47;
+$background-color: #EDECE8;
+
+
+
+/* ------------ universal style ------------ */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: $background-color;
+}
+
+main {
+  font-family: $font-stack;
+}
+
+.home-main {
+  
+}
+
+.static-pages-h1 {
+  color: $primary-color;
+}
+
+.site-nav-a {
+  text-decoration: none;
+  color: $secondary-color;
+}

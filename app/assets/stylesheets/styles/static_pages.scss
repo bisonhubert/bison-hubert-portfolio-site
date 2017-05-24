@@ -1,0 +1,56 @@
+/* ------------ under construction ------------ */
+.under-construction {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.under-construction-h1 {
+  margin-top: 5%;
+  padding-top: 2%;
+  font-size: 3em;
+  font-family: $font-stack;
+  letter-spacing: 2px
+}
+
+.under-construction-img {
+  width: 100%;
+  margin: 5% 0;
+  padding: 2% 0;
+}
+
+
+
+/* ------------ smartphone portrait ------------ */
+@media only screen and (min-width: 320px) {
+
+}
+
+
+
+/* ------------ smartphone landscape ------------ */
+@media only screen and (min-width: 560px) {
+  
+}
+
+
+
+/* ------------ tablet portrait ------------ */
+@media only screen and (min-width: 768px) {
+  
+}
+
+
+
+/* ------------ laptop ------------ */
+@media only screen and (min-width: 768px) {
+  
+}
+
+
+
+/* ------------ large monitor ------------ */
+@media only screen and (min-width: 1280px) {
+  
+}
