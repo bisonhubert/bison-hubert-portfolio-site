@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: $background-color;
+}
+
+main {
+  font-family: $font-stack-sans-serif;
+}
+
+.home-main {
+  
+}
+
+.static-pages-h1 {
+  color: $primary-color;
+}
+
+.site-nav-a {
+  text-decoration: none;
+  color: $secondary-color;
+}
