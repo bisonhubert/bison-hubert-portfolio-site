@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   
@@ -22,6 +22,11 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get about_url
     assert_response :success
     assert_select "title", "About | #{@base_title}"
+  end
+
+  test "should get resume" do
+    get resume_url
+    assert_response :success
   end
 
   test "should get portfolio" do
