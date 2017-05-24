@@ -1,4 +1,7 @@
-$font-stack: Verdana, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+$font-stack-serif: 'Roboto Slab', serif;
+$font-stack-sans-serif: 'Roboto', sans-serif;
 $primary-color: #050505;
 $secondary-color: #515A47;
 $background-color: #EDECE8;
@@ -13,7 +16,7 @@ html, body {
 }
 
 main {
-  font-family: $font-stack;
+  font-family: $font-stack-sans-serif;
 }
 
 .home-main {
