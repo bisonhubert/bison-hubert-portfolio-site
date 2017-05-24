@@ -4,19 +4,20 @@ html, body {
   background-color: $background-color;
 }
 
-main {
+.static-title,
+.site-nav {
   font-family: $font-stack-sans-serif;
 }
 
-.home-main {
-  
-}
-
-.static-pages-h1 {
+.static-title {
   color: $primary-color;
 }
 
-.site-nav-a {
-  text-decoration: none;
+.site-nav {
   color: $secondary-color;
+  text-decoration: none;
+}
+
+.site-nav:hover {
+  color: $primary-color;
 }

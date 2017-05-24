@@ -1,18 +1,17 @@
 <% provide(:title, 'About') %>
 
-<div class='left-content'>
-  <%= link_to 'Resume', resume_path, target: :_blank %>
-  
-  <%= link_to 'Github', 'https://www.github.com/bisonhubert', target: :_blank %>
-  <%= link_to 'LinkedIn', 'https://www.linkedin.com/in/bisonhubert', target: :_blank %>
-  <%= link_to 'Twitter', 'https://www.twitter.com/_bison__', target: :_blank %>
+<nav class='site-nav-wrapper social-nav-wrapper'>
+  <%= link_to 'Resume', resume_path, target: :_blank, class: 'site-nav social-nav' %>  
+  <%= link_to 'Github', 'https://www.github.com/bisonhubert', target: :_blank, class: 'site-nav social-nav' %>
+  <%= link_to 'LinkedIn', 'https://www.linkedin.com/in/bisonhubert', target: :_blank, class: 'site-nav social-nav' %>
+  <%= link_to 'Twitter', 'https://www.twitter.com/_bison__', target: :_blank, class: 'site-nav social-nav' %>
+</nav>
 
-  <%= link_to 'Portfolio', portfolio_path %>
-  <a href='#'>Blog</a>
-  <%= link_to 'About', about_path %>
-  <%= link_to 'Home', home_path %>
-</div>
 
-<div class='right-content'>
-  <%= image_tag 'profile-pictures/profile-picture-snowman', alt: 'bison-hubert-with-snowman' %>
-</div>
+
+<%= image_tag 'profile-pictures/profile-picture-snowman', alt: 'bison-hubert-with-snowman' %>
+<nav class='site-nav-wrapper'>
+  <%= link_to 'Portfolio', portfolio_path, class: 'site-nav' %>
+  <%= link_to 'Blog', '#', class: 'site-nav' %>
+  <%= link_to 'Home', home_path, class: 'site-nav' %>
+</nav>
