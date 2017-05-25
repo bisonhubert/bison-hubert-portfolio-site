@@ -1,0 +1,53 @@
+// smartphone portrait
+@media only screen and (min-width: $smartphone-portrait) {
+  .home-wrapper {
+    margin-top: 100%;
+    padding-left: 3%;
+
+    .static-title,
+    .site-nav {
+      letter-spacing: 1px;
+    }
+
+    .title-span {
+      display: block;
+    }
+
+    .static-title {
+      font-size: 1.4em;
+      line-height: 1.4;
+    }
+
+    .site-nav {
+      margin: 0 1%;
+    }
+
+    .site-nav:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+// smartphone landscape
+@media only screen and (min-width: $smartphone-landscape) {
+  .home-wrapper {
+    margin-top: 30%;
+  }
+}
+
+
+
+// tablet
+@media only screen and (min-width: $tablet-portrait) {
+  
+  
+}
+
+
+
+// widescreen monitor
+@media only screen and (min-width: $widescreen-monitor) {
+   
+}
