@@ -1,14 +1,9 @@
 // smartphone portrait
 @media only screen and (min-width: $smartphone-portrait) {
   .home-wrapper {
-<<<<<<< HEAD
-    margin-top: 100%;
-    padding-left: 3%;
-=======
     position: absolute;
-    bottom: 27%;
-    margin-left: 3%;
->>>>>>> origin/master
+    bottom: 18%;
+    margin-left: 6%;
 
     .static-title,
     .site-nav {
@@ -39,7 +34,8 @@
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
   .home-wrapper {
-    margin-left: 6%;
+    bottom: 18%;
+    margin-left: 9%;
   }
 }
 
