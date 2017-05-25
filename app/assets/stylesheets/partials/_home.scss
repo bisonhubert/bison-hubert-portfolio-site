@@ -43,13 +43,18 @@
 
 // tablet
 @media only screen and (min-width: $tablet-portrait) {
-  
-  
+  // .site-nav:hover {
+  //   text-decoration: underline;
+  //   color: $secondary-color;
+  // }
 }
 
 
 
 // widescreen monitor
 @media only screen and (min-width: $widescreen-monitor) {
-   
+  .site-nav:hover {
+    text-decoration: overline;
+    color: $secondary-color;
+  }
 }
