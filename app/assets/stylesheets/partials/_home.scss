@@ -2,8 +2,12 @@
 @media only screen and (min-width: $smartphone-portrait) {
   .home-wrapper {
     margin-top: 100%;
-    padding-left: 12px;
     padding-left: 3%;
+
+    .static-title,
+    .site-nav {
+      letter-spacing: 1px;
+    }
 
     .title-span {
       display: block;
@@ -12,11 +16,9 @@
     .static-title {
       font-size: 1.4em;
       line-height: 1.4;
-      letter-spacing: 1px;
     }
 
     .site-nav {
-      letter-spacing: 0.8px;
       margin: 0 1%;
     }
 
