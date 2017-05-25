@@ -15,7 +15,6 @@
     }
 
     .static-title {
-      font-size: 1.4em;
       line-height: 1.4;
     }
 
@@ -34,7 +33,6 @@
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
   .home-wrapper {
-    bottom: 18%;
     margin-left: 9%;
   }
 }
@@ -43,16 +41,29 @@
 
 // tablet
 @media only screen and (min-width: $tablet-portrait) {
-  // .site-nav:hover {
-  //   text-decoration: underline;
-  //   color: $secondary-color;
-  // }
+  .home-wrapper {
+    bottom: 15%;
+    margin-left: 12%
+  }
+
+  .static-title {
+    font-size: 2.6em;
+  }
+
+  .site-nav {
+    font-size: 2em;
+  }
 }
 
 
 
-// widescreen monitor
+// desktop
 @media only screen and (min-width: $widescreen-monitor) {
+
+  .site-nav {
+
+  }
+
   .site-nav:hover {
     text-decoration: overline;
     color: $secondary-color;
