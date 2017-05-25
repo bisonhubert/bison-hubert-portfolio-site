@@ -5,9 +5,18 @@ html, body {
   background-color: $background-color;
 }
 
+h1 {
+  font-size: 1.4em;
+}
+
+.site-nav {
+  font-size: 1em;
+}
+
 .under-construction-h1,
 .static-title,
 .site-nav {
+  letter-spacing: 1px;
   font-family: $font-stack-sans-serif;
 }
 
@@ -22,4 +31,41 @@ html, body {
 
 .site-nav:hover {
   color: $primary-color;
+}
+
+
+
+// smartphone portrait
+@media only screen and (min-width: $smartphone-portrait) {
+
+}
+
+
+
+// smartphone landscape
+@media only screen and (min-width: $smartphone-landscape) {
+
+}
+
+
+
+// tablet
+@media only screen and (min-width: $tablet-portrait) {
+  .static-title {
+    font-size: 2.6em;
+  }
+
+  .site-nav {
+    font-size: 1.4em;
+  }
+}
+
+
+
+// desktop
+@media only screen and (min-width: $widescreen-monitor) {
+  .site-nav:hover {
+    text-decoration: overline;
+    color: $secondary-color;
+  }
 }

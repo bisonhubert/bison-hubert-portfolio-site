@@ -5,18 +5,8 @@
     bottom: 18%;
     margin-left: 6%;
 
-    .static-title,
-    .site-nav {
-      letter-spacing: 1px;
-    }
-
     .title-span {
       display: block;
-    }
-
-    .static-title {
-      font-size: 1.4em;
-      line-height: 1.4;
     }
 
     .site-nav {
@@ -34,7 +24,6 @@
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
   .home-wrapper {
-    bottom: 18%;
     margin-left: 9%;
   }
 }
@@ -43,13 +32,18 @@
 
 // tablet
 @media only screen and (min-width: $tablet-portrait) {
-  
-  
+  .home-wrapper {
+    bottom: 15%;
+    margin-left: 12%
+  }
 }
 
 
 
-// widescreen monitor
+// desktop
 @media only screen and (min-width: $widescreen-monitor) {
-   
+  .home-wrapper {
+    margin-left: 10%;
+    bottom: 17%;
+  }
 }
