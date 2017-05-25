@@ -4,6 +4,7 @@
 Rails.application.config.assets.version = '2.0'
 
 # Add additional assets to the asset load path
+Rails.application.config.assets.precompile += [/.*\.js/,/.*\.scss/]
 Rails.application.config.assets.precompile += %w( resume.pdf )
 
 # Precompile additional assets.
