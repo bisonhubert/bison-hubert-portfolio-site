@@ -1,20 +1,40 @@
 <% provide(:title, 'About') %>
 
-<main class='about-wrapper'>
-  <div class='top-content left-content'>
-    <%= image_tag 'profile-pictures/profile-picture-snowman.jpg', alt: 'bison-hubert-with-snowman', class: 'image-circle profile-pic' %>
-    <nav class='site-nav-wrapper'>
-      <%= link_to 'Portfolio', portfolio_path, class: 'site-nav' %>
-      <%= link_to 'Blog', '#', class: 'site-nav' %>
-      <%= link_to 'Home', home_path, class: 'site-nav' %>
-    </nav>
-  </div>
-  <div class='bottom-content right-content'>
-    <nav class='site-nav-wrapper social-nav-wrapper'>
-      <%= link_to 'Resume', resume_path, target: :_blank, class: 'site-nav social-nav' %>  
-      <%= link_to 'Github', 'https://www.github.com/bisonhubert', target: :_blank, class: 'site-nav social-nav' %>
-      <%= link_to 'LinkedIn', 'https://www.linkedin.com/in/bisonhubert', target: :_blank, class: 'site-nav social-nav' %>
-      <%= link_to 'Twitter', 'https://www.twitter.com/_bison__', target: :_blank, class: 'site-nav social-nav' %>
-    </nav>
-  </div>
-</main>
+<div class='about-wrapper'>
+  <header class='site-header'>
+    <div class='left-header-content'>
+      <h1 class='static-title header-title'>Bison Hubert</h1>
+    </div>
+    <div class='right-header-content'>
+      <nav class='site-nav-wrapper header-nav-wrapper'>
+        <%= link_to 'Portfolio', portfolio_path, class: 'site-nav header-nav' %>
+        <%= link_to 'Blog', '#', class: 'site-nav header-nav' %>
+        <%= link_to 'Home', home_path, class: 'site-nav header-nav' %>
+      </nav>
+    </div>
+  </header>
+  <main class='about-main'>
+    <div class='top-content left-content'>
+      <%= image_tag 'profile-pictures/profile-picture-snowman.jpg', alt: 'bison-hubert-with-snowman', class: 'image-circle profile-pic' %>
+      <nav class='site-nav-wrapper social-nav-wrapper'>
+        <%= link_to 'LinkedIn', 'https://www.linkedin.com/in/bisonhubert', target: :_blank, class: 'site-nav social-nav' %>
+        <%= link_to 'Github', 'https://www.github.com/bisonhubert', target: :_blank, class: 'site-nav social-nav' %>
+        <%= link_to 'Twitter', 'https://www.twitter.com/_bison__', target: :_blank, class: 'site-nav social-nav' %>
+        <%= link_to 'Resume', resume_path, target: :_blank, class: 'site-nav social-nav' %>  
+      </nav>
+    </div>
+    <div class='bottom-content right-content'>
+      <div class='about-blurb'>
+        <p class='about-p'>
+          Bison Hubert is California native who started exploring web development in 2014. As someone who was once intimidated by technology, he now finds inspiration in the endless creativity offered by transforming ideas into digital experiences.
+        </p>
+        <p class='about-p'>
+          Hailing from a family of teachers, he values growth and learning. Since 2015 he has mentored hundreds of students from across the globe looking to make the jump into programming. The core curriculum bridges fundamentals for web development, accelerated learning techniques, emotional intelligence, and ways to adopt a growth mindset.
+        </p>
+        <p class='about-p'>
+        In his spare time he can be found exploring new frameworks and open source projects, working through the <%= link_to 'Teach Yourself Computer Science', path: 'https://teachyourselfcs.com/', class: 'p-link' %> curriculum, cooking (and enjoying) savory dishes, and adventuring with his friends and family.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
