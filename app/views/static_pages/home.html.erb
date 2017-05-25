@@ -1,13 +1,13 @@
 <% provide(:title, 'Home') %>
-
-<h1 class='static-title'>
-  Bison Hubert is a
-  Software Developer + Mentor
-  living in Oakland, CA
-</h1>
-
-<nav class='site-nav-wrapper'>
-  <%= link_to 'Portfolio', portfolio_path, class: 'site-nav' %>
-  <%= link_to 'Blog', '#', class: 'site-nav' %>
-  <%= link_to 'About', about_path, class: 'site-nav' %>
-</nav>
+<main class='home-wrapper'>
+  <h1 class='static-title'>
+    <span class='title-span'>Bison Hubert</span>
+    <span class='title-span'>Software Developer + Mentor</span>
+    <span class='title-span'>Oakland, CA</span>
+  </h1>
+  <nav class='site-nav-wrapper'>
+    <%= link_to 'Portfolio', portfolio_path, class: 'site-nav' %>
+    <%= link_to 'Blog', '#', class: 'site-nav' %>
+    <%= link_to 'About', about_path, class: 'site-nav' %>
+  </nav>
+</main>

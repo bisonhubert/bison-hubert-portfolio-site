@@ -1,9 +1,17 @@
+// Screen Sizes
+$smartphone-portrait: 320px;
+$smartphone-landscape: 560px;
+$tablet-portrait: 768px;
+$widescreen-monitor: 1280px;
+
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 $font-stack-serif: Roboto Slab, serif;
 $font-stack-sans-serif: Roboto, sans-serif;
 
+
 // Colors
 $primary-color: rgb(5,5,5);
 $secondary-color: rgb(81,90,71);
-$background-color: rgb(237,236,232);
+$background-color: rgb(247,247,247);
