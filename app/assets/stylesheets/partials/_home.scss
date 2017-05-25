@@ -3,7 +3,7 @@
   .home-wrapper {
     position: absolute;
     bottom: 27%;
-    padding-left: 3%;
+    margin-left: 3%;
 
     .static-title,
     .site-nav {
@@ -33,7 +33,9 @@
 
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
-  
+  .home-wrapper {
+    margin-left: 6%;
+  }
 }
 
 
