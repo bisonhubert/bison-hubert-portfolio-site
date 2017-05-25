@@ -5,17 +5,8 @@
     bottom: 18%;
     margin-left: 6%;
 
-    .static-title,
-    .site-nav {
-      letter-spacing: 1px;
-    }
-
     .title-span {
       display: block;
-    }
-
-    .static-title {
-      line-height: 1.4;
     }
 
     .site-nav {
@@ -45,14 +36,6 @@
     bottom: 15%;
     margin-left: 12%
   }
-
-  .static-title {
-    font-size: 2.6em;
-  }
-
-  .site-nav {
-    font-size: 2em;
-  }
 }
 
 
@@ -61,10 +44,6 @@
 @media only screen and (min-width: $widescreen-monitor) {
   .home-wrapper {
     margin-left: 10%;
-  }
-
-  .site-nav:hover {
-    text-decoration: overline;
-    color: $secondary-color;
+    bottom: 17%;
   }
 }
