@@ -1,37 +1,55 @@
-// smartphone portrait
+// iPhone 5 portrait
 @media only screen and (min-width: $smartphone-portrait) {
   .about-wrapper {
     width: 100%;
     height: 100%;
   }
 
-  .left-header-content,
-  .right-header-content {
-    display: inline;
-  }
+  .site-header {
+    margin: 0;
+    width: 100%;
+    height: 100%;
 
-  .header-title {
-    font-size: 1.5em;
-    display: inline-block;
-    padding-left: 10px;
-    width: 42%;
-  }
+    .left-header-content,
+    .right-header-content {
+      display: inline;
+    }
+    
+    .header-title {
+      display: inline-block;
+      padding-left: 10px;
+      width: 45%;
+    }
+  
+    .header-nav-wrapper {
+      display: inline-block;
+      width: 45%;
+      text-align: right;
+      padding-right: 10px;
+    }
 
-  .header-nav-wrapper {
-    display: inline-block;
-    width: 49%;
-    text-align: right;
-    padding-right: 10px;
-  }
+    .header-nav {
+      margin-left: 3%;
+      font-size: 0.75em;
+    }
 
-  .header-nav {
-    margin-left: 3%;
-    font-size: 0.75em;
+    .header-nav:first-child {
+      margin-left: 0;
+    }
   }
+}
 
-  .header-nav:first-child {
-    margin-left: 0;
-  }
+
+
+// smartphone portrait
+@media only screen and (min-width: $smartphone-portrait + 1) {
+  // .header-title {
+  //   font-size: 1.5em;
+  // }
+
+  // .header-nav {
+  //   font-size: 1em;
+  // }
 }
 
 
