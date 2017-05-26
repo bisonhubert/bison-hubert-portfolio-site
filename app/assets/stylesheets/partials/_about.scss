@@ -48,6 +48,14 @@
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
   .about-wrapper {
+    .header-nav-wrapper {
+      margin: 5% 0;
+    }
+
+    .social-nav-wrapper {
+      margin-top: 4%;
+    }
+
     .top-content {
       width: 60%;
     }
