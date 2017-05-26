@@ -68,7 +68,19 @@
 // tablet
 @media only screen and (min-width: $tablet-portrait) {
   .about-wrapper {
-    // reposition content to sit left to right
+    .site-nav-wrapper {
+      .site-nav {
+        font-size: 1.5em;
+      }
+    }
+
+    .bottom-content {
+      width: 75%;
+      
+      .about-p {
+        font-size: 1.25em;
+      }
+    }
   }
 }
 
@@ -76,5 +88,6 @@
 
 // desktop
 @media only screen and (min-width: $widescreen-monitor) {
-
+  // reposition content to sit left to right
+  // increase font size
 }
