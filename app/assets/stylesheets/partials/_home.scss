@@ -30,10 +30,19 @@
 
 
 
-// tablet
+// smaller tablet portrait
 @media only screen and (min-width: $tablet-portrait) {
   .home-wrapper {
+    margin-left: 5%;
     bottom: 15%;
+  }
+}
+
+
+
+// tablet
+@media only screen and (min-width: $tablet-portrait + 1) {
+  .home-wrapper {
     margin-left: 12%
   }
 }
