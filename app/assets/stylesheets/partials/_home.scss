@@ -1,9 +1,10 @@
-// smartphone portrait
+// iPhone 5 portrait
 @media only screen and (min-width: $smartphone-portrait) {
   .home-wrapper {
     position: absolute;
     bottom: 18%;
     margin-left: 4%;
+    font-size: 0.8em;
 
     .title-span {
       display: block;
@@ -16,6 +17,15 @@
     .site-nav:first-child {
       margin-left: 0;
     }
+  }
+}
+
+
+
+// smartphone portrait
+@media only screen and (min-width: $smartphone-portrait + 1) {
+  .home-wrapper {
+    font-size: 1em;
   }
 }
 
