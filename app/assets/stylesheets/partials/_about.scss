@@ -22,7 +22,7 @@
       .header-nav-wrapper {
         display: inline-block;
         width: 45%;
-        text-align: left;
+        text-align: center;
         padding-left: 10px;
       }
 
@@ -40,10 +40,12 @@
 
 
 
-// smartphone portrait
-@media only screen and (min-width: $smartphone-portrait) {
-  .header-nav-wrapper {
-    
+
+@media only screen and (min-width: $smartphone-portrait + 1) {
+  .about-wrapper {
+    .site-header {
+      font-size: 1.2em;
+    }
   }
 }
 
