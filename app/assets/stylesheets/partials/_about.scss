@@ -19,6 +19,7 @@
     .bottom-content {
       width: 80%;
       margin: 0 auto;
+      text-align: center;
 
       .profile-pic {
         width: 100%;
@@ -48,17 +49,41 @@
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
   .about-wrapper {
-    .top-content {
-      width: 60%;
+    .header-nav-wrapper {
+      margin: 5% 0;
+
+      .header-nav {
+        margin: 2% 6%;
+      }
+    }
+
+    .social-nav-wrapper {
+      margin-top: 4%;
+
+      .social-nav {
+        margin: 2% 3.6%;
+        font-size: 1.2em;
+      }
+    }
+
+    .top-content {    
+      .profile-pic {
+        width: 60%;
+      }
     }
     
     .bottom-content {
-      width: 80%;
-  
-      .social-nav {
-        margin: 2%;
-        font-size: 1.2em;
+      .about-p {
+        letter-spacing: 1.2px;
       }
+  
+    }
+
+
+
+    .header-nav,
+    .social-nav {
+      letter-spacing: 2px;
     }
   }
 }
@@ -68,7 +93,19 @@
 // tablet
 @media only screen and (min-width: $tablet-portrait) {
   .about-wrapper {
-    // reposition content to sit left to right
+    .site-nav-wrapper {
+      .site-nav {
+        font-size: 1.5em;
+      }
+    }
+
+    .bottom-content {
+      width: 75%;
+      
+      .about-p {
+        font-size: 1.25em;
+      }
+    }
   }
 }
 
@@ -76,5 +113,23 @@
 
 // desktop
 @media only screen and (min-width: $widescreen-monitor) {
+  .about-wrapper {
+    .header-nav-wrapper,
+    .social-nav-wrapper {
+      text-align: center;
+      margin: 2% 0;
+    }
 
+    .about-main {
+      width: 100%;
+      height: 100%;
+
+      .left-content,
+      .right-content {
+        width: 49.8%;
+        display: inline-block;
+      }
+    }
+  }
+  // increase font size
 }
