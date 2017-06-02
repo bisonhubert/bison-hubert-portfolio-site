@@ -50,6 +50,10 @@
   .about-wrapper {
     .header-nav-wrapper {
       margin: 5% 0;
+
+      .header-nav {
+        margin: 2% 6%;
+      }
     }
 
     .social-nav-wrapper {
@@ -62,11 +66,20 @@
     
     .bottom-content {
       width: 80%;
+
+      .about-p {
+        letter-spacing: 1.2px;
+      }
   
       .social-nav {
-        margin: 2%;
+        margin: 2% 3.6%;
         font-size: 1.2em;
       }
+    }
+
+    .header-nav,
+    .social-nav {
+      letter-spacing: 2px;
     }
   }
 }
