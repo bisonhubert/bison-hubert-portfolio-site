@@ -53,41 +53,28 @@
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
   .about-wrapper {
-    .header-nav-wrapper {
+    .site-nav-wrapper {
       margin: 5% 0;
 
-      .header-nav {
+      .site-nav {
+        font-size: 0.9em;
         margin: 2% 6%;
-      }
-    }
-
-    .social-nav-wrapper {
-      margin-top: 4%;
-
-      .social-nav {
-        margin: 2% 3.6%;
-        font-size: 1.2em;
+        letter-spacing: 2px;
       }
     }
 
     .top-content {    
       .profile-pic {
-        width: 60%;
+        width: 65%;
       }
     }
     
     .bottom-content {
+      width: 70%;
+
       .about-p {
         letter-spacing: 1.2px;
       }
-  
-    }
-
-
-
-    .header-nav,
-    .social-nav {
-      letter-spacing: 2px;
     }
   }
 }
