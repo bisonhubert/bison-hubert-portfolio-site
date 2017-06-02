@@ -38,29 +38,64 @@ html, body {
 
 // smartphone portrait
 @media only screen and (min-width: $smartphone-portrait) {
+  .static-page-wrapper {
+    .site-nav-wrapper {
+      text-align: center;
+      margin: 7% 0;
 
+      .site-nav {
+        margin: 2%;
+        font-size: 0.8em;
+      }
+
+      .header-nav {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+  }
 }
 
 
 
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
+  .static-page-wrapper {    
+    .site-nav-wrapper {
+      margin: 5% 0;
 
+      .site-nav {
+        font-size: 0.9em;
+        margin: 2% 5%;
+        letter-spacing: 2px;
+      }
+    }
+  }
 }
 
 
 
 // tablet
 @media only screen and (min-width: $tablet-portrait) {
-  .static-title {
-    font-size: 2.6em;
-    letter-spacing: 2px;
-    line-height: 1.3;
+  .home-wrapper {
+    .static-title {
+      font-size: 2.6em;
+      letter-spacing: 2px;
+      line-height: 1.3;
+    }
+
+    .site-nav {
+      font-size: 1.4em;
+      letter-spacing: 2px;
+    }
   }
 
-  .site-nav {
-    font-size: 1.4em;
-    letter-spacing: 2px;
+  .static-page-wrapper {
+    .site-nav-wrapper {
+      .site-nav {
+        font-size: 1em;
+      }
+    }
   }
 }
 
@@ -71,5 +106,11 @@ html, body {
   .site-nav:hover {
     text-decoration: line-through;
     color: $secondary-color;
+  }
+
+  .static-page-wrapper {
+    .site-nav-wrapper {
+      margin: 2% 0;
+    }
   }
 }

@@ -3,21 +3,6 @@
   .about-wrapper {
     width: 100%;
     height: 100%;
-    
-    .site-nav-wrapper {
-      text-align: center;
-      margin: 7% 0;
-
-      .site-nav {
-        margin: 2%;
-        font-size: 0.8em;
-      }
-
-      .header-nav {
-        margin-left: 5%;
-        margin-right: 5%;
-      }
-    }
 
     .top-content,
     .bottom-content {
@@ -39,11 +24,6 @@
           margin: 8% 0;
         }
       }
-
-      .social-nav {
-        margin: 1%;
-        font-size: 0.8em;
-      }
     }
   }
 }
@@ -53,16 +33,6 @@
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
   .about-wrapper {
-    .site-nav-wrapper {
-      margin: 5% 0;
-
-      .site-nav {
-        font-size: 0.9em;
-        margin: 2% 5%;
-        letter-spacing: 2px;
-      }
-    }
-
     .top-content {    
       .profile-pic {
         width: 65%;
@@ -84,12 +54,6 @@
 // tablet
 @media only screen and (min-width: $tablet-portrait) {
   .about-wrapper {
-    .site-nav-wrapper {
-      .site-nav {
-        font-size: 1em;
-      }
-    }
-
     .bottom-content {
       .about-p {
         font-size: 1.25em;
@@ -103,12 +67,6 @@
 // desktop
 @media only screen and (min-width: $widescreen-monitor) {
   .about-wrapper {
-    .header-nav-wrapper,
-    .social-nav-wrapper {
-      text-align: center;
-      margin: 2% 0;
-    }
-
     .about-main {
       width: 100%;
       height: 100%;
@@ -146,5 +104,4 @@
       }
     }
   }
-  // increase font size
 }
