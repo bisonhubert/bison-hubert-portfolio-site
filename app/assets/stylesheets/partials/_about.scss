@@ -19,6 +19,7 @@
     .bottom-content {
       width: 80%;
       margin: 0 auto;
+      text-align: center;
 
       .profile-pic {
         width: 100%;
@@ -58,24 +59,27 @@
 
     .social-nav-wrapper {
       margin-top: 4%;
-    }
 
-    .top-content {
-      width: 60%;
-    }
-    
-    .bottom-content {
-      width: 80%;
-
-      .about-p {
-        letter-spacing: 1.2px;
-      }
-  
       .social-nav {
         margin: 2% 3.6%;
         font-size: 1.2em;
       }
     }
+
+    .top-content {    
+      .profile-pic {
+        width: 60%;
+      }
+    }
+    
+    .bottom-content {
+      .about-p {
+        letter-spacing: 1.2px;
+      }
+  
+    }
+
+
 
     .header-nav,
     .social-nav {
@@ -109,6 +113,5 @@
 
 // desktop
 @media only screen and (min-width: $widescreen-monitor) {
-  // reposition content to sit left to right
   // increase font size
 }
