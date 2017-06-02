@@ -1,11 +1,18 @@
 <% provide(:title, 'Portfolio') %>
 
-<!-- link to individual project -->
-  <!-- nested images -->
 <div class='portfolio-wrapper static-page-wrapper'>
-  <nav class='site-nav-wrapper'>
-    <%= link_to 'Blog', '#', class: 'site-nav portfolio-nav header-nav' %>
-    <%= link_to 'About', about_path, class: 'site-nav portfolio-nav header-nav' %>
-    <%= link_to 'Home', home_path, class: 'site-nav portfolio-nav header-nav' %>
-  </nav>
+  <header class='site-header'>
+    <nav class='site-nav-wrapper'>
+      <%= link_to 'Blog', '#', class: 'site-nav portfolio-nav header-nav' %>
+      <%= link_to 'About', about_path, class: 'site-nav portfolio-nav header-nav' %>
+      <%= link_to 'Home', home_path, class: 'site-nav portfolio-nav header-nav' %>
+    </nav>
+  </header>
+  <main class='portfolio-main'>
+    <div class='project-wrapper'>
+      <%= link_to root_path, class: 'project-link' do %>
+        <%= image_tag "profile-pictures/profile-picture-snowman.jpg", alt: "project-alt", class: "project-image project-image-h" %>
+      <% end %>
+    </div>
+  </main>
 </div>
