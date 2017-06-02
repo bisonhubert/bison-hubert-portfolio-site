@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/about',     to: 'static_pages#about'
   get '/portfolio', to: 'static_pages#under_construction'
   get '/resume',    to: 'static_pages#resume'
+
+  resources :articles
 end

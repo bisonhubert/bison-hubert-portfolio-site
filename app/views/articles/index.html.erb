@@ -1,0 +1,28 @@
+<% provide(:title, "Bison's Blog") %>
+
+<main class='blog-wrapper static-page-wrapper'>
+  <nav class='site-nav-wrapper'>
+    <%= link_to 'Portfolio', portfolio_path, class: 'site-nav' %>
+    <%= link_to 'About', about_path, class: 'site-nav' %>
+    <%= link_to 'Home', home_path, class: 'site-nav' %>
+  </nav>
+
+  <h1>Bison's Blog</h1>
+   
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+      <th>Summary</th>
+    </tr>
+   
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.image %></td>
+        <td><%= article.summary %></td>
+        <td><%= link_to 'Show', article_path(article) %></td>
+      </tr>
+    <% end %>
+  </table>
+</main>
