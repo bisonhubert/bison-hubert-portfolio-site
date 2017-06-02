@@ -1,14 +1,11 @@
 class StaticPagesController < ApplicationController
   def home
-    render 'home'
   end
 
   def about
-    render 'about'
   end
 
   def portfolio
-    render 'portfolio'
   end
 
   def resume
@@ -17,6 +14,5 @@ class StaticPagesController < ApplicationController
   end
 
   def under_construction
-    render 'under_construction'
   end
 end
