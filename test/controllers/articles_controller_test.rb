@@ -8,7 +8,13 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
   test "should get articles index" do
     get articles_path
     assert_response :success
-    assert_select "title", "Bison's Blog | #{@base_title}"
+    assert_select "title", "Bison Blogs | #{@base_title}"
+  end
+
+  test "should get blog" do
+    get bisonblogs_path
+    assert_response :success
+    assert_select "title", "Bison Blogs | #{@base_title}"
   end
 
   test "should get new article form" do
