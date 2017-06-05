@@ -12,7 +12,7 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get blog" do
-    get bisonblogs_path
+    get blog_path
     assert_response :success
     assert_select "title", "Bison Blogs | #{@base_title}"
   end

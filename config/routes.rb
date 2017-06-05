@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/about',       to: 'static_pages#about'
   get '/portfolio',   to: 'static_pages#under_construction'
   get '/resume',      to: 'static_pages#resume'
-  get '/bisonblogs',  to: 'articles#index'
+  get '/blog',        to: 'articles#index'
 
   resources :articles
 end
