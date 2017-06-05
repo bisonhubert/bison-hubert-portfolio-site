@@ -7,7 +7,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @article.image %>
+  <%= image_tag @article.image %>
 </p>
  
 <p>
@@ -15,4 +15,5 @@
   <%= @article.text %>
 </p>
 
-<%= link_to 'Back', blog_path %>
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

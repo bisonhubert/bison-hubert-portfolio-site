@@ -19,10 +19,13 @@
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.title %></td>
-        <td><%= article.image %></td>
+        <td><%= image_tag article.image %></td>
         <td><%= article.summary %></td>
         <td><%= link_to 'Show', article_path(article) %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
       </tr>
     <% end %>
   </table>
+
+  <%= link_to 'New Article', new_article_path %>
 </main>
