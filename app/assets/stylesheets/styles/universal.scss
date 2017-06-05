@@ -29,11 +29,11 @@ html, body {
 .p-link {
   color: $secondary-color;
   text-decoration: none;
+  &:hover {
+    text-decoration: line-through;
+  }
 }
 
-.site-nav:hover {
-  color: $primary-color;
-}
 
 
 // smartphone portrait
@@ -103,11 +103,6 @@ html, body {
 
 // desktop
 @media only screen and (min-width: $widescreen-monitor) {
-  .site-nav:hover {
-    text-decoration: line-through;
-    color: $secondary-color;
-  }
-
   .static-page-wrapper {
     .site-nav-wrapper {
       margin: 2% 0;
