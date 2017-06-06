@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get '/resume',      to: 'static_pages#resume'
   get '/blog',        to: 'articles#index'
 
+  resources :users
   resources :articles
 end
