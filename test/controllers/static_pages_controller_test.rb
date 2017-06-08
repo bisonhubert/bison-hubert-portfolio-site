@@ -28,11 +28,4 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get resume_url
     assert_response :success
   end
-
-  test "should get portfolio" do
-    get portfolio_url
-    assert_response :success
-    assert_select "title", "Coming Soon | #{@base_title}"
-  end
-
 end
