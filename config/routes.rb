@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/portfolio',           to: 'static_pages#portfolio'
   get '/resume',              to: 'static_pages#resume'
   get '/blog',                to: 'articles#index'
-  get '/under-construction',  to: 'static_pages#under_construction'
+  get '/under_construction',  to: 'static_pages#under_construction'
 
   resources :users
   resources :articles
