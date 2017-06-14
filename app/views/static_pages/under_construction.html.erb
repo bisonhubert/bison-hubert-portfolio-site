@@ -1,6 +1,18 @@
 <% provide(:title, 'Coming Soon') %>
-<main class="under-construction">
-  <h1 class="under-construction-h1">Bison Hubert Portfolio Site</h1>
+
+<div class='static-page-wrapper'>
+  <nav class='site-nav-wrapper header-nav-wrapper'>
+    <%= link_to 'Portfolio', under_construction_path, class: 'site-nav header-nav' %>
+    <%= link_to 'Blog', under_construction_path, class: 'site-nav header-nav' %>
+    <%= link_to 'About', about_path, class: 'site-nav header-nav' %>
+    <%= link_to 'Home', root_path, class: 'site-nav header-nav' %>
+  </nav>
+</div>
+
+<main class='under-construction'>
+  <header class='site-header'>
+    <h1 class='under-construction-h1'>Bison Hubert Portfolio Site</h1>
+  </header>
   <%= image_tag 'gifs/giphy.gif', alt: 'under-construction-gif', class: 'under-construction-img' %>
   <%= image_tag 'gifs/giphy-1.gif', alt: 'under-construction-gif', class: 'under-construction-img' %>
   <%= image_tag 'gifs/giphy-2.gif', alt: 'under-construction-gif', class: 'under-construction-img' %>
