@@ -73,21 +73,30 @@
       display: table;
       margin: 6% 0;
 
+      .left-content {
+        width: 51%;
+      }
+
+      .right-content {
+        width: 49%;
+      }
+
       .left-content,
       .right-content {
-        width: 50%;
         display: table-cell;
         vertical-align: middle;
 
         .profile-pic {
-          width: 75%;
-          margin-right: -55px;
+          width: 85%;
+          margin: 0 auto;
+          padding-left: 5%;
         }
 
         .about-blurb {
-          width: 75%;
+          width: 85%;
           text-align: left;
           margin-bottom: 5%;
+          margin: 0 auto;
         }
 
         .about-p:first-child {
