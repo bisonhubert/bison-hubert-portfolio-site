@@ -15,7 +15,16 @@
   </head>
 
   <body>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+
+    <% if !logged_in? %>
+      <%= link_to 'Login', login_path, class: 'session' %>
+    <% end %>
+
     <%= yield %>
+    
     <%= debug(params) if Rails.env.development? %>
   </body>
 </html>

@@ -45,6 +45,14 @@ html, body {
   margin-top: 45px;
 }
 
+.alert {
+  color: red;
+}
+
+.session {
+  color: $background-color;
+}
+
 
 // smartphone portrait
 @media only screen and (min-width: $smartphone-portrait) {
