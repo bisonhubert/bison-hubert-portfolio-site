@@ -38,6 +38,20 @@ html, body {
   color: $background-color;
 }
 
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.alert {
+  color: red;
+}
+
+.session {
+  color: $background-color;
+}
 
 
 // smartphone portrait
