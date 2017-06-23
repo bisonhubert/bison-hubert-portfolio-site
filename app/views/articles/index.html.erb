@@ -1,38 +1,11 @@
 <% provide(:title, "Bison Blogs") %>
-
+<%= render 'new_article_logout' %>
 <div class='static-page-wrapper blog-wrapper'>
-  <%= render :partial => '/layouts/header' %>
-  
+  <%= render '/layouts/header' %>
   <main class='blog-wrapper'>
     <h1>Bison Blogs</h1>
-     
     <table>
-      <tr>
-        <th>Title</th>
-        <th>Text</th>
-        <th>Summary</th>
-      </tr>
-     
-      <% @articles.each do |article| %>
-        <tr>
-          <td><%= article.title %></td>
-          <td><%= image_tag article.image %></td>
-          <td><%= article.summary %></td>
-          <% if logged_in? %>
-            <td><%= link_to 'Show', article_path(article) %></td>
-            <td><%= link_to 'Edit', edit_article_path(article) %></td>
-            <td><%= link_to 'Delete', article_path(article),
-                  method: :delete,
-                  data: { confirm: 'Are you sure?' } %></td>
-          <% end %>
-        </tr>
-      <% end %>
+      <%= render @articles %>
     </table>
-
-    <% if logged_in? %>
-      <%= link_to 'New Article', new_article_path %>
-      <%= link_to 'Log out', logout_path, method: :delete %>
-    <% end %>
-
   </main>
 </div>
