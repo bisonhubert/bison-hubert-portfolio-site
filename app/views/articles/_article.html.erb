@@ -1,10 +1,4 @@
-<%= javascript_tag do %>
-  $('tr[data-link]').click(function() {
-    window.location = $(this).data('link')
-  })
-<% end %>
-
-<tr data-link='<%= article_path(article) %>' id='test-bkg-color'>
+<tr data-link='<%= article_path(article) %>'>
   <td><%= article.title %></td>
   <td><%= image_tag article.image %></td>
   <td><%= article.summary %></td>
