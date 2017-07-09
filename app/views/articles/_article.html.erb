@@ -1,5 +1,5 @@
 <tr class='article-row'>
-  <td class='article-row-title'><%= link_to article.title, article %></td>
-  <td class='article-row-image'><%= link_to (image_tag article.image), article %></td>
-  <td class='article-row-summary'><%= link_to article.summary, article %></td>
+  <td class='article-cell'><%= link_to (image_tag article.image, class: 'article-row-image'), article, class: 'article-link' %></td>
+  <td class='article-cell'><%= link_to article.title, article, class: 'article-link article-row-title' %></td>
+  <td class='article-cell'><%= link_to article.summary, article, class: 'article-link  article-row-summary' %></td>
 </tr>
