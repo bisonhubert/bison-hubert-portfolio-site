@@ -2,17 +2,11 @@
 
 <div class='portfolio-wrapper static-page-wrapper'>
   <header class='site-header'>
-    <nav class='site-nav-wrapper'>
-      <%= link_to 'Blog', blog_path, class: 'site-nav portfolio-nav header-nav' %>
-      <%= link_to 'About', about_path, class: 'site-nav portfolio-nav header-nav' %>
-      <%= link_to 'Home', home_path, class: 'site-nav portfolio-nav header-nav' %>
-    </nav>
+    <%= render 'layouts/site_navigation' %>
   </header>
   <main class='portfolio-main'>
     <div class='project-wrapper'>
-      <%= link_to root_path, class: 'project-link' do %>
-        <%= image_tag "profile-pictures/profile-picture-snowman.jpg", alt: "project-alt", class: "project-image project-image-h" %>
-      <% end %>
+      
     </div>
   </main>
 </div>
