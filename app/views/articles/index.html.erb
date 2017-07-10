@@ -1,11 +1,10 @@
-<% provide(:title, "Bison Blogs") %>
-<%= render 'new_article_logout' %>
+<% provide(:title, "Blog") %>
 <div class='static-page-wrapper blog-wrapper'>
   <%= render '/layouts/header' %>
   <main class='blog-wrapper'>
-    <h1>Bison Blogs</h1>
     <table class='blog-articles'>
-      <%= render @articles %>
+      <%= render @articles.reverse %>
     </table>
   </main>
 </div>
+<%= render 'new_article_logout' %>

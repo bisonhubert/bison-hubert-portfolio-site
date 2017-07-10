@@ -1,3 +1,127 @@
-table {
+/* ------------ typography ------------ */
+.article-cell,
+.blog-article {
+  font-family: $font-stack-serif;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.article-wrapper {
+  color: $primary-color;
+  background-color: red;
+}
+
+.article-text-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.back-button {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+
+/* ------------ blog index ------------ */
+.blog-articles {
   width: 100%;
+  margin-top: 2%;
+}
+
+.article-cell {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.article-cell:nth-child(2) {
+  margin: 2% auto;
+  letter-spacing: 1.2px;
+}
+
+.article-cell:last-child {
+  width: 70%;
+  margin: 0 auto 10%;
+  letter-spacing: 0.75px;
+}
+
+.article-link {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.article-row-title {
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.article-row-image {
+  width: 100%;
+}
+
+.article-row-summary {
+  margin: 0 auto;
+}
+
+
+/* ------------ article show ------------ */
+.blog-article {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+.article-image {
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: $smartphone-landscape) {
+  /* ------------ blog index ------------ */
+  .article-row-image,
+  .article-cell:nth-child(2) {
+    width: 65%;
+  }
+
+  .article-cell:nth-child(2) {
+    margin: 1% auto;
+  }
+
+  .article-cell:last-child {
+    width: 45%;
+  }
+
+  /* ------------ blog article ------------ */
+  .article-image,
+  .article-title,
+  .article-text-wrapper {
+    width: 65%;
+  }
+
+  .article-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article-text-wrapper {
+    font-size: 1.1em;
+  }
+}
+
+
+
+@media only screen and (min-width: $widescreen-monitor) {
+  /* ------------ blog index ------------ */
+  .blog-articles {
+    margin-top: 4%;
+  }
+
+  .article-row-title {
+    font-size: 2em;
+  }
+
+  .article-row-summary {
+    font-size: 1.2em;
+  }
 }
