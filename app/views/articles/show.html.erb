@@ -1,15 +1,14 @@
 <% provide(title: @article.title) %>
+<div class='static-page-wrapper'>
+  <%= render 'layouts/site_navigation' %>
+  <main class='blog-article'>
+    <%= image_tag @article.image, class: 'article-image' %>
+    <h1 class='article-title'><%= @article.title %></h1>
+    <div class='article-text-wrapper'>
+      <%= simple_format(@article.text) %>
+    </div>
+    <%= link_to '<<', blog_path, class: 'back-button' %>
+  </main>
+</div>
 <%= render 'edit_delete_article' %>
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @article.image %>
-</p>
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
-<%= link_to 'Back', blog_path %>
+  
