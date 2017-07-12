@@ -14,7 +14,7 @@ describe Article, type: :model do
       end
 
       it 'must contain at least 5 characters' do
-        expect(FactoryGirl.build(:article, title: 'a' *4 )).to be_invalid
+        expect(FactoryGirl.build(:article, title: 'a' * 4 )).to be_invalid
       end
     end
 
