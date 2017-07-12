@@ -1,16 +1,13 @@
 require 'rails_helper'
 
 describe User, type: :model do
-
   context 'test' do
-    describe 'factory' do
-      it 'has a valid factory' do
-        expect(FactoryGirl.build(:user)).to be_valid
-      end
+    it 'has a valid factory' do
+      expect(FactoryGirl.build(:user)).to be_valid
     end
   end
 
-  context 'validations' do
+  context 'validation' do
     describe 'name' do
       it 'must be present' do
         expect(FactoryGirl.build(:user, name: nil)).to be_invalid
