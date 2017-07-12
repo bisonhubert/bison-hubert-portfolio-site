@@ -15,7 +15,10 @@ gem 'scout_apm'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
+  gem 'awesome_print'
   gem 'byebug',  '9.0.0', platform: :mri
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
@@ -23,15 +26,17 @@ group :development do
   gem 'listen',                '3.0.8'
   gem 'spring',                '1.7.2'
   gem 'spring-watcher-listen', '2.0.0'
+  gem 'spring-commands-rspec'
   gem 'pry-rails'
 end
 
 group :test do
-  gem 'minitest', '~> 5.10',  '!= 5.10.2'
-  gem 'rails-controller-testing', '0.1.1'
-  gem 'minitest-reporters',       '1.1.9'
-  gem 'guard',                    '2.13.0'
-  gem 'guard-minitest',           '2.4.4'
+  gem 'factory_girl'
+  gem 'faker'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
 group :production do
