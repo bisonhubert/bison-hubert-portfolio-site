@@ -2,8 +2,11 @@
 <div class='static-page-wrapper'>
   <%= render 'layouts/site_navigation' %>
   <main class='blog-article'>
-    <%= image_tag @article.image, class: 'article-image' %>
-    <h1 class='article-title'><%= @article.title %></h1>
+    <header class='article-header'>
+      <%= image_tag @article.image, class: 'article-image' %>
+      <h1 class='article-title'><%= @article.title %></h1>
+      <h4 class='article-date'><%= format_date(@article.created_at) %></h4>
+    </header>
     <div class='article-text-wrapper'>
       <%= simple_format(@article.text) %>
     </div>
