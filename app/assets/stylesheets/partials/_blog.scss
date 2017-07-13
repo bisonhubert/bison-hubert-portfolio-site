@@ -84,7 +84,6 @@
 }
 
 .article-date {
-  margin: 0;
   color: $secondary-color;
 }
 
@@ -116,6 +115,7 @@
   /* ------------ blog article ------------ */
   .article-image,
   .article-title,
+  .article-date,
   .article-text-wrapper {
     width: 65%;
   }
@@ -138,11 +138,29 @@
     margin-top: 4%;
   }
 
+  .article-cell:nth-child(2) {
+    margin-bottom: 0;
+  }
+
   .article-row-title {
     font-size: 2em;
   }
 
   .article-row-summary {
     font-size: 1.2em;
+  }
+
+  /* ------------ blog show ------------ */
+  .blog-article {
+    line-height: 2;
+    letter-spacing: 0.5px
+  }
+
+  .article-title {
+    margin-top: 2%;
+  }
+
+  .article-text-wrapper p {
+    margin-top: 5%;
   }
 }
