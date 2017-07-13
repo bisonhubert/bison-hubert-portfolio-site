@@ -79,6 +79,23 @@
   width: 100%;
 }
 
+.article-title {
+  margin-bottom: 1%;
+}
+
+.article-date {
+  margin: 0;
+  color: $secondary-color;
+}
+
+.article-title,
+.article-date,
+.article-text-wrapper {
+  width: 99%;
+  margin: 0 auto;
+  text-align: left;
+}
+
 
 
 @media only screen and (min-width: $smartphone-landscape) {
