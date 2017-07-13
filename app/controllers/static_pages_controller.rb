@@ -15,4 +15,7 @@ class StaticPagesController < ApplicationController
 
   def under_construction
   end
+
+  def scattergories_die
+  end
 end
