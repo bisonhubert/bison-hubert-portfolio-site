@@ -35,7 +35,6 @@
 }
 
 .article-cell:nth-child(2) {
-  margin: 2% auto;
   letter-spacing: 1.2px;
 }
 
@@ -50,6 +49,10 @@
   color: $primary-color;
 }
 
+.article-row-date {
+  color: $secondary-color;
+}
+
 .article-row-title {
   font-size: 1.4em;
   font-weight: 900;
@@ -61,6 +64,7 @@
 
 .article-row-summary {
   margin: 0 auto;
+  font-size: 0.9em;
 }
 
 
