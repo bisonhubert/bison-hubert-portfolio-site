@@ -35,7 +35,6 @@
 }
 
 .article-cell:nth-child(2) {
-  margin: 2% auto;
   letter-spacing: 1.2px;
 }
 
@@ -50,6 +49,10 @@
   color: $primary-color;
 }
 
+.article-row-date {
+  color: $secondary-color;
+}
+
 .article-row-title {
   font-size: 1.4em;
   font-weight: 900;
@@ -61,6 +64,7 @@
 
 .article-row-summary {
   margin: 0 auto;
+  font-size: 0.9em;
 }
 
 
@@ -73,6 +77,22 @@
 
 .article-image {
   width: 100%;
+}
+
+.article-title {
+  margin-bottom: 1%;
+}
+
+.article-date {
+  color: $secondary-color;
+}
+
+.article-title,
+.article-date,
+.article-text-wrapper {
+  width: 99%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 
@@ -95,6 +115,7 @@
   /* ------------ blog article ------------ */
   .article-image,
   .article-title,
+  .article-date,
   .article-text-wrapper {
     width: 65%;
   }
@@ -117,11 +138,29 @@
     margin-top: 4%;
   }
 
+  .article-cell:nth-child(2) {
+    margin-bottom: 0;
+  }
+
   .article-row-title {
     font-size: 2em;
   }
 
   .article-row-summary {
     font-size: 1.2em;
+  }
+
+  /* ------------ blog show ------------ */
+  .blog-article {
+    line-height: 2;
+    letter-spacing: 0.5px
+  }
+
+  .article-title {
+    margin-top: 2%;
+  }
+
+  .article-text-wrapper p {
+    margin-top: 5%;
   }
 }

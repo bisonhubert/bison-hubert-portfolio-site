@@ -1,5 +1,6 @@
 <tr class='article-row'>
-  <td class='article-cell'><%= link_to (image_tag article.image, class: 'article-row-image'), article, class: 'article-link' %></td>
-  <td class='article-cell'><%= link_to article.title, article, class: 'article-link article-row-title' %></td>
-  <td class='article-cell'><%= link_to article.summary, article, class: 'article-link  article-row-summary' %></td>
+  <td class='article-cell'><%= link_to (image_tag article.image, class: 'article-row-image'), article, class: 'article-link article-row' %></td>
+  <td class='article-cell'><%= link_to article.title, article, class: 'article-link article-row article-row-title' %></td>
+  <td class='article-cell'><%= link_to format_date(article.created_at), article, class: 'article-link article-row article-row article-row-date' %></td>
+  <td class='article-cell'><%= link_to article.summary, article, class: 'article-link article-row  article-row-summary' %></td>
 </tr>
