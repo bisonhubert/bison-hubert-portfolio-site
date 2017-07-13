@@ -1,7 +1,7 @@
 <% if logged_in? %>
   <div class='edit-delete-buttons'>
-    <%= link_to 'Edit', edit_article_path(@article) %> |
-    <%= link_to 'Delete', article_path(@article),
+    <%= link_to 'Edit', edit_article_path(@article), class: 'edit-article' %> |
+    <%= link_to 'Delete', article_path(@article), class: 'delete-article',
           method: :delete,
           data: { confirm: 'Are you sure?' } %>
   </div>
