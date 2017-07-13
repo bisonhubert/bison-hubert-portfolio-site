@@ -6,7 +6,7 @@
     <%= link_to 'Portfolio', under_construction_path, class: 'home-site-nav site-nav header-nav' %>
   <% end %>
   <% if !yield(:title).include?('Blog') %>
-    <%= link_to 'Blog', under_construction_path, class: 'home-site-nav site-nav header-nav' %>
+    <%= link_to 'Blog', blog_path, class: 'home-site-nav site-nav header-nav' %>
   <% end %>
   <% if !yield(:title).include?('About') %>
     <%= link_to 'About', about_path, class: 'home-site-nav site-nav header-nav' %>
