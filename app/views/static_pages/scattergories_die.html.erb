@@ -1,6 +1,12 @@
 <main class='die'>
   <div class='die-wrapper'>
-    <%= image_tag 'blog/scattergories-die.png', alt: 'scattergories-die', class: 'die-sprite' %>
+    <div class='die-animation-sprites'>
+      <%= image_tag 'blog/scattergories_die/die_animation_1.png', alt: 'scattergories-animation', class: 'die-sprite animation-sprite' %>
+      <%= image_tag 'blog/scattergories_die/die_animation_2.png', alt: 'scattergories-animation', class: 'die-sprite animation-sprite' %>
+      <%= image_tag 'blog/scattergories_die/die_animation_3.png', alt: 'scattergories-animation', class: 'die-sprite animation-sprite' %>
+      <%= image_tag 'blog/scattergories_die/die_animation_4.png', alt: 'scattergories-animation', class: 'die-sprite animation-sprite' %>
+    </div>
+    <%= image_tag 'blog/scattergories_die/scattergories_die.png', alt: 'scattergories-die', class: 'die-sprite' %>
     <p class='die-value'></p>
   </div>
   <div class='button-wrapper'>
