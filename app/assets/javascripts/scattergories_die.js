@@ -28,15 +28,38 @@ $(document).on('turbolinks:load', function() {
       25: 'Y',
       26: 'Z'
     };
-    var dieValue = rollDie();
-    $('.die-value').text(dieValue);
-    
-    function rollDie() {
+    var sprites = document.getElementsByClassName('die-sprite');
+    var dieValue;
+
+    function setUp() {
+      hideAnimations();
+      dieValue = showRoll();
+      $('.die-value').text(dieValue);
+    }
+
+    function hideAnimations() {
+      for(var i = 0; i < sprites.length; i++) {
+        sprites[i].classList.add('hidden');
+      }
+    }
+
+    function showRoll() {
+      sprites[sprites.length - 1].classList.remove('hidden');
       return LETTER_MAP[(Math.round(Math.random() * 25) + 1)];
-    };
+    }
+
+    function animateRoll() {
+      sprites[sprites.length - 1].classList.add('hidden');
+      for(var i = 0; i < sprites.length - 1; i++) {
+        // find a way to pause execution of function between toggling hidden display
+      }
+      showRoll();
+    }
+
+    setUp();
 
     $('.roll').on('click', function() {
-      dieValue = rollDie;
+      dieValue = showRoll();
       $('.die-value').text(dieValue);
     });
   });
