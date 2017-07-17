@@ -55,7 +55,7 @@ describe User, type: :model do
     end
   end
 
-  context 'callbacks' do
+  context 'callback' do
     describe 'email' do
       it 'is stored as downcase' do
         mixed_case_email = 'a@B.cOm'
