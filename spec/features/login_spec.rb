@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'user login', :type => :feature do
+describe 'Login' do
   before :each do
     @user = FactoryGirl.create(:user)
   end

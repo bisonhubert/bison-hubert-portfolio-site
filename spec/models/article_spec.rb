@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Article, type: :model do
+describe Article do
   context 'test' do
     it 'has a valid factory' do
       expect(FactoryGirl.build(:article)).to be_valid
