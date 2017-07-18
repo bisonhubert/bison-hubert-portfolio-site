@@ -51,7 +51,8 @@ html, body {
 
 // smartphone portrait
 @media only screen and (min-width: $smartphone-portrait) {
-  .static-page-wrapper {
+  .static-page-wrapper,
+  .nav-wrapper {
     .site-nav-wrapper {
       text-align: center;
       margin: 7% 0;
@@ -73,7 +74,8 @@ html, body {
 
 // smartphone landscape
 @media only screen and (min-width: $smartphone-landscape) {
-  .static-page-wrapper {    
+  .static-page-wrapper,
+  .nav-wrapper {    
     .site-nav-wrapper {
       margin: 5% 0;
 
@@ -103,7 +105,8 @@ html, body {
     }
   }
 
-  .static-page-wrapper {
+  .static-page-wrapper,
+  .nav-wrapper {
     .site-nav-wrapper {
       .site-nav {
         font-size: 1em;
@@ -116,7 +119,8 @@ html, body {
 
 // desktop
 @media only screen and (min-width: $widescreen-monitor) {
-  .static-page-wrapper {
+  .static-page-wrapper,
+  .nav-wrapper {
     .site-nav-wrapper {
       margin: 2% 0;
     }

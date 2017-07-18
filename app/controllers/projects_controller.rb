@@ -1,5 +1,12 @@
 class ProjectsController < ApplicationController
+  before_action :logged_in_user, except: [:index, :show]
+  
+  def index
+    @projects = Project.all
+  end
+
   def new
+    @project = Project.new
   end
 
   def create
@@ -15,16 +22,29 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 
-  def index
-    @projects = Project.all
+  def edit
+    @project = Project.find(params[:id])
   end
 
   def update
-    
+    @project = Project.find(params[:id])
+    if @project.update(project_params)
+      redirect_to project_path(@project)
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+
+    redirect_to portfolio_path
   end
 
   private
-    def project_params
-      params.require(:project).permit(:title, :description, :image, :demo_link, :github_link)
-    end
+
+  def project_params
+    params.require(:project).permit(:name, :github_link, :site_link, :description, :image)
+  end
 end

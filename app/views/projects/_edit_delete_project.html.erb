@@ -1,0 +1,8 @@
+<% if logged_in? %>
+  <div class='edit-delete-buttons'>
+    <%= link_to 'Edit Project', edit_project_path(@project), class: 'edit-project' %> |
+    <%= link_to 'Delete Project', project_path(@project), class: 'delete-project',
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %>
+  </div>
+<% end %>

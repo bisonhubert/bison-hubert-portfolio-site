@@ -37,5 +37,25 @@ describe 'Admin' do
         expect(page).not_to have_link('Delete Article')
       end
     end
+
+    describe 'Projects #index' do
+      it 'displays login link & hides logout, new project links' do
+        visit portfolio_path
+        expect(page).to have_link('Login')
+        expect(page).not_to have_link('Logout')
+        expect(page).not_to have_link('New Project')
+      end
+    end
+
+    describe 'Projects #show' do
+      it 'displays login link & hides logout, edit project, delete project links' do
+        project = FactoryGirl.create(:project)
+        visit project_path(project)
+        expect(page).to have_link('Login')
+        expect(page).not_to have_link('Logout')
+        expect(page).not_to have_link('Edit Project')
+        expect(page).not_to have_link('Delete Project')
+      end
+    end
   end
 end

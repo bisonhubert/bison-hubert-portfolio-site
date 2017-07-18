@@ -1,3 +1,5 @@
-<header class='site-header'>
-  <%= render '/layouts/site_navigation' %>
-</header>
+<% unless yield(:title) == 'Home' %>
+  <header class='nav-wrapper'>
+    <%= render '/layouts/site_navigation' %>
+  </header>
+<% end %>
