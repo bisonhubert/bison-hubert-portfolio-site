@@ -1,5 +1,5 @@
 $(document).on('turbolinks:load', function() {
-  $(document).ready(function() {
+  $('.static_pages.scattergories_die').ready(function() {
     var LETTER_MAP = {
       1: 'A',
       2: 'B',
@@ -38,7 +38,7 @@ $(document).on('turbolinks:load', function() {
     }
 
     function hideAnimations() {
-      for(var i = 0; i < sprites.length; i++) {
+      for(var i = 0; i < sprites.length - 1; i++) {
         sprites[i].classList.add('hidden');
       }
     }
