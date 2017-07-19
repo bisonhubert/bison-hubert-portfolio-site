@@ -1,5 +1,6 @@
 require 'capybara/rspec'
 require 'support/spec_test_helper'
+require 'support/database_cleaner'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
