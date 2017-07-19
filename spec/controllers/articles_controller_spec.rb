@@ -1,73 +1,87 @@
 require 'rails_helper'
 
 describe ArticlesController do
+  include SpecTestHelper
+
   let(:article) { FactoryGirl.create(:article) }
-  
-  describe 'GET #index' do
-    before :each do
-      get :index
-    end
 
-    it 'returns a 200 response' do
-      expect(response.status).to eq(200)
-    end
-
-    it 'renders the :index view' do
-      expect(response).to render_template(:index)
-    end
-
-    it 'populates an array of articles' do
-      expect(assigns(:articles)).to eq([article])
-    end
-  end
-
-  describe 'GET #show' do
-    before :each do
-      get :show, params: { id: article.id }
-    end
-
-    it 'returns a 200 response' do
-      expect(response.status).to eq(200)
-    end
-
-    it 'renders the :show template' do
-      expect(response).to render_template :show
-    end
-
-    it 'renders an article' do
-      expect(assigns(:article)).to eq(article)
-    end
-  end
-
-  describe 'GET #new' do
-    context 'when a user is not logged in' do
+  context 'when a user is not logged in' do
+    describe 'GET #index' do
       before :each do
+        get :index
+      end
+
+      it 'returns a 200 response and renders the :index template' do
+        expect(response.status).to eq(200)
+        expect(response).to render_template(:index)
+      end
+
+      it 'populates an array of articles' do
+        expect(assigns(:articles)).to eq([article])
+      end
+    end
+
+    describe 'GET #show' do
+      before :each do
+        get :show, params: { id: article.id }
+      end
+
+      it 'returns a 200 response and renders the :show template' do
+        expect(response.status).to eq(200)
+        expect(response).to render_template :show
+      end
+
+      it 'renders an article' do
+        expect(assigns(:article)).to eq(article)
+      end
+    end
+
+    describe 'GET #new' do
+      it 'returns a 302 response and redirects to the home page' do
         get :new
-      end
-
-      it 'returns a 302 response' do
         expect(response.status).to eq(302)
-      end
-
-      it 'redirects to the home page' do
         expect(response).to redirect_to root_url
       end
     end
-  end
+    
+    describe 'GET #edit' do  
+      it 'returns a 302 response and redirects to the home page' do
+        get :edit, params: { id: article.id }
+        expect(response.status).to eq(302)
+        expect(response).to redirect_to root_url
+      end
+    end
+  end  
 
-  describe 'GET #edit' do
+  context 'when a user is logged in' do
     before :each do
-      get :edit, params: { id: article.id }
+      login_admin
     end
 
-    context 'when a user is not logged in' do
-      it 'returns a 302 response' do
-        expect(response.status).to eq(302)
+    describe 'GET #show' do 
+      it 'renders the new template' do
+        get :new
+        expect(response).to render_template(:new)
       end
+    end
 
-      it 'redirects to the home page' do
-        expect(response).to redirect_to root_url
+    describe 'GET #edit' do
+      it 'renders the edit template' do
+        get :edit, params: { id: article.id }
+        expect(response).to render_template(:edit)
       end
+    end
+
+    describe 'POST #create' do
+
+    end
+
+    describe 'PATCH #update' do
+
+    end
+
+    describe 'DELETE #destroy' do
+
     end
   end
 end

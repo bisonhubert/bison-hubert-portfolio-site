@@ -1,4 +1,5 @@
 require 'capybara/rspec'
+require 'support/spec_test_helper'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
