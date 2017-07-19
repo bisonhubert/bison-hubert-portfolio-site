@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 describe ArticlesController do
+  let(:article) { FactoryGirl.create(:article) }
+  
   describe 'GET #index' do
-
     before :each do
-     get :index
+      get :index
     end
 
     it 'returns a 200 response' do
@@ -16,14 +17,11 @@ describe ArticlesController do
     end
 
     it 'populates an array of articles' do
-      article = FactoryGirl.create(:article)
       expect(assigns(:articles)).to eq([article])
     end
   end
 
   describe 'GET #show' do
-    let(:article) { FactoryGirl.create(:article) }
-
     before :each do
       get :show, params: { id: article.id }
     end
@@ -43,21 +41,21 @@ describe ArticlesController do
 
   describe 'GET #new' do
     context 'when a user is not logged in' do
-      it 'returns a 302 response' do
+      before :each do
         get :new
+      end
+
+      it 'returns a 302 response' do
         expect(response.status).to eq(302)
       end
 
       it 'redirects to the home page' do
-        get :new
         expect(response).to redirect_to root_url
       end
     end
   end
 
   describe 'GET #edit' do
-    let(:article) { FactoryGirl.create(:article) }
-
     before :each do
       get :edit, params: { id: article.id }
     end
