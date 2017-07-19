@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe User, type: :model do
+describe User do
   context 'test' do
     it 'has a valid factory' do
       expect(FactoryGirl.build(:user)).to be_valid

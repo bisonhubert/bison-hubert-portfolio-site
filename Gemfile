@@ -39,6 +39,7 @@ group :test do
   gem 'guard-rspec'
   gem 'launchy'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'rails-controller-testing'
 end
 
 group :production do

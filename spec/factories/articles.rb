@@ -7,4 +7,8 @@ FactoryGirl.define do
     f.image { Faker::Placeholdit.image("6x3") }
     f.summary { Faker::Zelda.character }
   end
+
+  factory :invalid_article, parent: :article do |f|
+    f.title nil
+  end
 end

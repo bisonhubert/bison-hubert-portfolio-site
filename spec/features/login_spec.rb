@@ -1,16 +1,14 @@
 require 'rails_helper'
 
-describe 'user login', :type => :feature do
-  before :each do
-    @user = FactoryGirl.create(:user)
-  end
+describe 'Login' do
+  let(:user) { FactoryGirl.create(:user) }
 
   context 'when password is invalid' do
     it 'renders signin form and flashes message' do
       visit login_path
       expect(page).to have_title('Log in')
-      fill_in 'Email', with: @user.email
-      fill_in 'Password', with: 'fakepassword'
+      fill_in 'Email', with: user.email
+      fill_in 'Password', with: ''
       click_button('Login')
       expect(page).to have_title('Log in')
       expect(page).to have_text('Invalid email/password combination')
@@ -21,8 +19,8 @@ describe 'user login', :type => :feature do
     it 'logs in user and redirects to blog index' do
       visit login_path
       expect(page).to have_title('Log in')
-      fill_in 'Email', with: @user.email
-      fill_in 'Password', with: @user.password
+      fill_in 'Email', with: user.email
+      fill_in 'Password', with: user.password
       click_button('Login')
       expect(page).to have_title('Blog')
     end
