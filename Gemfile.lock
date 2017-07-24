@@ -53,6 +53,8 @@ GEM
       execjs
     awesome_print (1.8.0)
     bcrypt (3.1.11)
+    bootsnap (1.1.2)
+      msgpack (~> 1.0)
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -128,6 +130,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.2.0)
     minitest (5.10.2)
+    msgpack (1.1.0)
     multi_json (1.12.1)
     nenv (0.3.0)
     nio4r (1.2.1)
@@ -252,6 +255,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bcrypt (= 3.1.11)
+  bootsnap
   bootstrap-sass (= 3.3.6)
   byebug (= 9.0.0)
   capybara
