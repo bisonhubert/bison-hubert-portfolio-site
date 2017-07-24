@@ -14,4 +14,13 @@ User.create({ name: 'test', email: 'test@example.com', password: 'test1234%' })
     summary: summary,
     image: image
   })
+
+  link = 'www.github.com/bisonhubert'
+  Project.create({
+    name: title,
+    description: text,
+    github_link: link,
+    site_link: link,
+    image: Faker::Fillmurray.image(false, 600, 600)
+  })
 end

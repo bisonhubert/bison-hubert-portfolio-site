@@ -1,10 +1,9 @@
 <% provide(:title, "Blog") %>
 <div class='static-page-wrapper'>
-  <%= render '/layouts/header' %>
   <main class='blog-wrapper'>
     <table class='blog-articles'>
       <%= render @articles.reverse %>
     </table>
   </main>
 </div>
-<%= render 'new_article_logout' %>
+<%= render 'new_article' %>

@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   get     '/home',                to: 'static_pages#home'
   get     '/about',               to: 'static_pages#about'
-  get     '/portfolio',           to: 'static_pages#portfolio'
   get     '/resume',              to: 'static_pages#resume'
   get     '/blog',                to: 'articles#index'
+  get     '/portfolio',           to: 'projects#index'
   get     '/under_construction',  to: 'static_pages#under_construction'
 
   get     '/login',               to: 'sessions#new'
@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   # blog resources
   resources :articles, path: 'blog'
   get     '/scattergories_die',   to: 'static_pages#scattergories_die'
-  
+  # project resources
+  resources :projects, path: 'portfolio'
 end

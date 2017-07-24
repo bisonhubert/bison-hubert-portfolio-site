@@ -18,7 +18,7 @@ describe SessionsController do
     end
 
     context 'when email and password are valid' do
-      it 'sets the user in the session and redirects to blog index' do
+      it 'sets the user in the session and redirects to root url' do
         post :create, params: { 
           session: { 
             email: user.email, 
@@ -27,7 +27,7 @@ describe SessionsController do
         }
         
         expect(response.status).to eq(302)
-        expect(response).to redirect_to(blog_path)
+        expect(response).to redirect_to(home_path)
         expect(controller.current_user).to eq(user)
       end
     end

@@ -1,0 +1,8 @@
+<% provide(:title, 'Portfolio') %>
+
+<div class='portfolio-wrapper static-page-wrapper'>
+  <main class='project-list-wrapper'>
+    <%= render @projects.reverse %>
+  </main>
+</div>
+<%= render 'new_project' %>

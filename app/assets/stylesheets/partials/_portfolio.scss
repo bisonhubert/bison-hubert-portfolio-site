@@ -1,0 +1,52 @@
+.portfolio-wrapper {
+  margin-top: 2%;
+}
+
+.project-list-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-image {
+  width: 100%;
+  margin-bottom: 15%;
+  border: 1px solid $secondary-color;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: $smartphone-landscape) {
+  .project-list-wrapper {
+    width: 90%;
+    margin: 3% auto;
+    text-align: center;
+  }
+
+  .project-image-wrapper {
+    display: inline-block;
+    width: 29%;
+    margin: 2% 1% 0 1%;
+  }
+
+  .project-image {
+    margin: 0;
+  }
+}
+
+
+
+@media only screen and (min-width: $tablet-portrait) {
+  .project-list-wrapper {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: $widescreen-monitor) {
+  .project-list-wrapper {
+    width: 60%;
+  }
+}
