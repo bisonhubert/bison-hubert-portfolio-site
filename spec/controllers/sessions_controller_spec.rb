@@ -27,7 +27,7 @@ describe SessionsController do
         }
         
         expect(response.status).to eq(302)
-        expect(response).to redirect_to(home_path)
+        expect(response).to redirect_to(root_path)
         expect(controller.current_user).to eq(user)
       end
     end
