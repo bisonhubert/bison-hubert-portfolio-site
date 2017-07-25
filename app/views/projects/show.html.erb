@@ -1,3 +1,23 @@
-<h1><%= @project.name %></h1>
-<%= link_to '<<', portfolio_path, class: 'back-button' %>
+<main class='project-show'>
+  <section class='top-content left-content'>
+    <%= image_tag @project.image, class: 'project-image', alt: @project.name %>
+  </section>
+  <section class='bottom-content right-content'>
+    <h1 class='project-name'>
+      <%= @project.name %>
+    </h1>
+    <article class='project-description'>
+      <%= simple_format(@project.description) %>
+    </article>
+    <aside class='project-links'>
+      <% if @project.github_link && !@project.github_link.empty? %>
+        <%= link_to 'View code on Github', @project.github_link, class: 'project-link', target: '_blank' %>
+      <% end %>
+      <% if @project.site_link && !@project.site_link.empty? %>
+        <%= link_to 'Check out a demo', @project.site_link, class: 'project-link', target: '_blank' %>
+      <% end %>
+      <%= link_to '<< Back', portfolio_path, class: 'back-button project-link' %>
+    </aside>
+  </section>
+</main>
 <%= render 'edit_delete_project' %>

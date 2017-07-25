@@ -14,18 +14,6 @@ describe Project do
       end
     end
 
-    describe 'github_link' do
-      it 'must be present' do
-        expect(FactoryGirl.build(:project, github_link: nil)).to be_invalid
-      end
-    end
-
-    describe 'site_link' do
-      it 'must be present' do
-        expect(FactoryGirl.build(:project, site_link: nil)).to be_invalid
-      end
-    end
-
     describe 'image' do
       it 'must be present' do
         expect(FactoryGirl.build(:project, image: nil)).to be_invalid
@@ -35,6 +23,17 @@ describe Project do
     describe 'description' do
       it 'must be present' do
         expect(FactoryGirl.build(:project, description: nil)).to be_invalid
+      end
+    end
+  end
+
+  context 'callback' do
+    describe '#full_url' do
+      it 'adds http to site links before save' do
+        project = FactoryGirl.create(:project)
+        project.reload
+        expect(project.site_link).to include("http")
+        expect(project.github_link).to include("http")
       end
     end
   end

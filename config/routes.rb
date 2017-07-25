@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   # blog resources
   resources :articles, path: 'blog'
   get     '/scattergories_die',   to: 'static_pages#scattergories_die'
+  
   # project resources
   resources :projects, path: 'portfolio'
 end
