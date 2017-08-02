@@ -1,16 +1,17 @@
+/* ------------ portfolio index ------------ */
 .portfolio-wrapper {
   margin-top: 2%;
 }
 
 .project-list-wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .project-image {
   width: 100%;
   margin-bottom: 15%;
-  border: 1px solid $secondary-color;
+  border: 1px solid $primary-color;
 }
 
 .project-link {
@@ -19,7 +20,45 @@
 
 
 
+/* ------------ project show ------------ */
+.project-show {
+  margin-top: 4%;
+  margin-bottom: 5%;
+
+  .top-content,
+  .bottom-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .project-description {
+    width: 100%;
+    line-height: 1.4;
+    margin: 8% 0;
+  }
+
+  .project-link {
+    display: block;
+    margin-bottom: 2.5%;
+  }
+
+  .back-button {
+    margin-top: 5%;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
 @media only screen and (min-width: $smartphone-landscape) {
+  /* ------------ portfolio index ------------ */
   .project-list-wrapper {
     width: 90%;
     margin: 3% auto;
@@ -35,18 +74,70 @@
   .project-image {
     margin: 0;
   }
+
+  /* ------------ project show ------------ */
+  .project-show{
+    .project-image {
+      width: 65%;
+    }
+      
+    .bottom-content {
+      width: 70%;
+    }
+
+    .about-p {
+      letter-spacing: 1.2px;
+    }
+  }
 }
 
 
 
 @media only screen and (min-width: $tablet-portrait) {
+  /* ------------ portfolio index ------------ */
   .project-list-wrapper {
     width: 75%;
   }
 }
 
 @media only screen and (min-width: $widescreen-monitor) {
+  /* ------------ portfolio index ------------ */
   .project-list-wrapper {
     width: 60%;
+  }
+
+  /* ------------ project show ------------ */
+  .project-show {
+    .left-content {
+      width: 50%;
+      padding: 0 2% 0 4%;
+    }
+
+    .right-content {
+      width: 50%;
+      padding: 0 4% 0 2%;
+      vertical-align: top;
+    }
+
+    .top-content,
+    .bottom-content {
+      text-align: left;
+    }
+
+    .project-name {
+      margin-top: 0;
+    }
+
+    .project-image {
+      width: 100%;
+    }
+
+    .project-link {
+      margin-bottom: 1%;
+    }
+
+    .back-button {
+      margin-top: 7%;
+    }
   }
 }

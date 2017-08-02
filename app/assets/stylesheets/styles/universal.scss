@@ -3,25 +3,31 @@ html, body {
   background-color: $background-color;
 }
 
-.static-title {
+.static-title, {
   font-size: 1.4em;
 }
 
 .under-construction-h1,
 .static-title,
 .site-nav,
-.about-p {
+.about-p,
+.project-name,
+.project-description,
+.project-link {
   letter-spacing: 1px;
   font-family: $font-stack-sans-serif;
   line-height: 1.3;
 }
 
-.static-title {
+.static-title,
+.project-name,
+.project-description {
   color: $primary-color;
 }
 
 .site-nav,
-.p-link {
+.p-link,
+.project-link {
   color: $secondary-color;
   text-decoration: none;
   &:hover {
