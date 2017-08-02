@@ -25,18 +25,6 @@ describe StaticPagesController do
     end
   end
 
-  describe 'GET #resume' do
-    it 'returns a 200 response' do
-      get :resume
-      expect(response.status).to eq(200)
-    end
-
-    it 'renders a PDF' do
-      get :resume
-      expect(response.content_type).to eq('application/pdf')
-    end
-  end
-
   describe 'GET #stattergories_die' do
     it 'returns a 200 response' do
       get :scattergories_die
