@@ -1,15 +1,19 @@
 class Project < ApplicationRecord
   before_save :full_url
-  validates :name, :description, :image, presence: true
+  validates_presence_of :name, :description, :image
 
   private
 
   def full_url
-    unless self.site_link.include?('http')
-      self.site_link.prepend('http://')
+    if self.site_link && !self.site_link.empty?
+      unless self.site_link.include?('http') && self.site_link
+        self.site_link.prepend('http://')
+      end
     end
-    unless self.github_link.include?('http')
-      self.github_link.prepend('http://')
+    if self.github_link && !self.github_link.empty?
+      unless self.github_link.include?('http')
+        self.github_link.prepend('http://')
+      end
     end
   end
 end
