@@ -11,10 +11,10 @@
     </article>
     <aside class='project-links'>
       <% if @project.github_link && !@project.github_link.empty? %>
-        <%= link_to 'View code on Github', @project.github_link, class: 'project-link', target: '_blank' %>
+        <%= link_to 'View codebase', @project.github_link, class: 'project-link', target: '_blank' %>
       <% end %>
       <% if @project.site_link && !@project.site_link.empty? %>
-        <%= link_to 'Check out a demo', @project.site_link, class: 'project-link', target: '_blank' %>
+        <%= link_to 'View demo', @project.site_link, class: 'project-link', target: '_blank' %>
       <% end %>
       <%= link_to '<< Back', portfolio_path, class: 'back-button project-link' %>
     </aside>
