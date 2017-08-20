@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
   end
 
   def new
@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
   end
 
   def create
@@ -28,7 +28,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
    
     if @article.update(article_params)
       redirect_to @article
@@ -38,7 +38,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     @article.destroy
 
     redirect_to blog_path
