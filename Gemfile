@@ -15,6 +15,7 @@ gem 'jbuilder',       '2.4.1'
 gem 'normalize-scss', '7.0.0'
 gem 'scout_apm'
 gem 'bootsnap',       require: false
+gem 'friendly_id',    '~> 5.1.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'

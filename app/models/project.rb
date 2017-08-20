@@ -1,5 +1,7 @@
 class Project < ApplicationRecord
   before_save :full_url
+  extend FriendlyId
+  friendly_id :name, use: :slugged
   validates_presence_of :name, :description, :image
 
   private
